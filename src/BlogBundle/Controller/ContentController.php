@@ -22,9 +22,9 @@ class ContentController extends Controller
 
             if ($form->handleRequest($request)->isValid()) {
                 $message = \Swift_Message::newInstance()
-                ->setSubject('Message du blog Tekken')
-                ->setFrom('tekken@symfony.com')
-                ->setTo($this->container->getParameter('tekken.emails.contact_email'))
+                ->setSubject('Message du site de Franz Liszt')
+                ->setFrom('liszt@blacklab.com')
+                ->setTo($this->container->getParameter('rhapsody.emails.contact_email'))
                 ->setBody($this->renderView('BlogBundle:content:contactEmail.txt.twig', array('enquiry' => $enquiry)));
                 $this->get('mailer')->send($message);
 

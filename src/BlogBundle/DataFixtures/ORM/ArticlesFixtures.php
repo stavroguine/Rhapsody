@@ -13,50 +13,66 @@ class ArticlesFixtures extends AbstractFixture implements OrderedFixtureInterfac
     public function load(ObjectManager $manager)
     {
         $blog1 = new Articles();
-        $blog1->setTitle('Tekken 7 Out Today, Harada Talks History, Future of Fighting Games');
-        $blog1->setBlog(' It is difficult to speak in general terms about complexity. I don’t believe that Tekken is complex. If it were complex, it probably wouldn’t have sold 44 million copies and be the best-selling fighting game it is today. Some people in the FGC may say it is complex, but then others even say you can win in Tekken by button mashing, which sounds contradictory.
-
-        In fact, many techniques can easily be performed by “button mashing,” but this also means it could be said the game is accessible to a wide audience. It is frustrating when I see the same person say that Tekken is very technical, and thus difficult, but then says that it is a button masher with no depth in other instances. In actuality, I believe the game is easy for anyone to pick up and play, yet difficult to master if you want to compete at a tournament level.
-
-        However, the fan base is about 70% casual. Otherwise, it would be much too difficult to sell 44 million copies. Half of the 44 million is from Europe, with the next biggest fanbase coming from the US, and most of the players will never go to a tournament.
-
-        Special effort was made to ensure that Tekken 7 was more accessible than past installments. Getting up after being knocked down was made more simple, as well as the controls. The new mechanics also are quite simple. Long-time fans of the series have been saying this is the easiest Tekken for newcomers to pick up, and we have seen a large influx of new players for the arcade version in Japan and Asia. This was achieved because we have a good balance of breaking down/discarding what we have built up, and creating new content and mechanics on that streamlined base. ');
-        $blog1->setImage('tekken.jpg');
-        $blog1->setAuthor('Toto');
-        $blog1->setTags('tekken');
-        $blog1->setCreated(new \DateTime("2015-11-25 19:14:13"));
+        $blog1->setTitle('La santé de Liszt');
+        $blog1->setBlog('De santé fragile, Franz Liszt manque à plusieurs reprises de succomber à des fièvres. À six ans, il chante de mémoire le thème du Concerto en ut dièse mineur de Ries que son père a joué quelques heures plus tôt. Adam Liszt décide de lui enseigner le piano. En moins de deux ans, Liszt aborde  Johann Sebastian Bach, Wolfgang Amadeus Mozart et Ludwig van Beethoven. Conscient de ces progrès, Adam Liszt souhaite faire de son fils un enfant prodige, sur le modèle du jeune Mozart. Grâce au soutien financier de quelques nobles hongrois, la famille Liszt à Vienne en 1822. Franz Liszt suit les cours de piano de Carl Czerny et les cours de composition de Antonio Salieri. Ainsi préparé, il donne son premier concert public à la Landständischer Saal le 1er décembre 1822. Organisé quelques mois plus tard, le concert de la Redoutensaal a inspiré une légende biographique populaire : Beethoven serait venu embrasser sur scène. En réalité, Beethoven a pas assisté à ce concert. Il semblerait néanmoins quil ait écouté Liszt chez Czerny et lait chaleureusement félicité pour la qualité de son jeu.');
+        $blog1->setImage('liszt.jpg');
+        $blog1->setAuthor('bob');
+        $blog1->setTags('liszt');
+        $blog1->setCreated(new \DateTime());
         $blog1->setUpdated($blog1->getCreated());
         $manager->persist($blog1);
 
         $blog2 = new Articles();
-        $blog2->setTitle('Tekken’ It to the Streets');
-        $blog2->setBlog('Sid and Ryan test their improvisation skills on this week’s episode as they slam that record button with very little preparation! Ryan puts on his formal attire and interviews Sid (someone with no direct connection to the Tekken 7 development team) about Tekken 7. What’s new in this entry of the long-running series? How will new players feel jumping in? Will Sid ever actually give Final Fantasy XIV a chance? All this, and more!
-
-        Enjoy the show!');
-        $blog2->setImage('tekken2.jpg');
-        $blog2->setAuthor('Popol');
-        $blog2->setTags('tekken, fight');
-        $blog2->setCreated(new \DateTime("2014-08-13 17:49:28"));
+        $blog2->setTitle('Un pianiste virtuose');
+        $blog2->setBlog('Toutes les sources font de Liszt un des plus grands pianistes de son temps. Malheureusement, il existe aucun enregistrement pour pouvoir en juger29.
+Néanmoins, plusieurs indications nous permettent de nous faire une idée de ses capacités de virtuose. Sur le plan purement technique, Liszt possède une main une taille peu commune qui lui permet datteindre la douzième. Son professeur, Czerny, était, et demeure, le maître incontesté pour ce qui est de la vélocité et de agilité pianistique. Sur le plan intellectuel la supériorité de Liszt est la plus visible.');
+        $blog2->setImage('piano.jpg');
+        $blog2->setAuthor('superbob');
+        $blog2->setTags('lorem, ipsum');
+        $blog2->setCreated(new \DateTime("2011-07-23 06:12:33"));
         $blog2->setUpdated($blog2->getCreated());
         $manager->persist($blog2);
 
-        $blog3 = new Articles();
-        $blog3->setTitle('Tekken 7 Hits PS4 on June 2');
-        $blog3->setBlog('This is Dalton from Bandai Namco and I’m excited to announce that the next chapter in the legendary Tekken series will finally land in the hands of fighting game fans on June 2, 2017 when Tekken 7 hits PS4!
+        // $blog3 = new Articles();
+        // $blog3->setTitle('Misdirection. What the eyes see and the ears hear, the mind believes');
+        // $blog3->setBlog('Lorem ipsumvehicula nunc non leo hendrerit commodo. Vestibulum vulputate mauris eget erat congue dapibus imperdiet justo scelerisque.');
+        // $blog3->setImage('misdirection.jpg');
+        // $blog3->setAuthor('Gabriel');
+        // $blog3->setTags('misdirection, magic, movie, hacking, symblog');
+        // $blog3->setCreated(new \DateTime("2011-07-16 16:14:06"));
+        // $blog3->setUpdated($blog3->getCreated());
+        // $manager->persist($blog3);
+        //
+        // $blog4 = new Articles();
+        // $blog4->setTitle('The grid - A digital frontier');
+        // $blog4->setBlog('Lorem commodo. Vestibulum vulputate mauris eget erat congue dapibus imperdiet justo scelerisque. Nulla consectetur tempus nisl vitae viverra.');
+        // $blog4->setImage('the_grid.jpg');
+        // $blog4->setAuthor('Kevin Flynn');
+        // $blog4->setTags('grid, daftpunk, movie, symblog');
+        // $blog4->setCreated(new \DateTime("2011-06-02 18:54:12"));
+        // $blog4->setUpdated($blog4->getCreated());
+        // $manager->persist($blog4);
+        //
+        // $blog5 = new Articles();
+        // $blog5->setTitle('You\'re either a one or a zero. Alive or dead');
+        // $blog5->setBlog('Lorem ipsum dolor sit amet, consectetur adipiscing elittibulum vulputate mauris eget erat congue dapibus imperdiet justo scelerisque.');
+        // $blog5->setImage('one_or_zero.jpg');
+        // $blog5->setAuthor('Gary Winston');
+        // $blog5->setTags('binary, one, zero, alive, dead, !trusting, movie, symblog');
+        // $blog5->setCreated(new \DateTime("2011-04-25 15:34:18"));
+        // $blog5->setUpdated($blog5->getCreated());
+        // $manager->persist($blog5);
 
-        With the faithful 3D battle system intact, Tekken 7 takes the franchise to the next level with photorealistic graphics and innovative features and fighting mechanics. Select characters from an expansive roster of your favorites and new challengers, each with a distinct set of deadly techniques, martial arts moves, and combos.');
-        $blog3->setImage('tekken3.jpg');
-        $blog3->setAuthor('John');
-        $blog3->setTags('ps4, tekken, june');
-        $blog3->setCreated(new \DateTime("2013-12-27 20:19:56"));
-        $blog3->setUpdated($blog3->getCreated());
-        $manager->persist($blog3);
+
 
         $manager->flush();
 
         $this->addReference('blog-1', $blog1);
         $this->addReference('blog-2', $blog2);
-        $this->addReference('blog-3', $blog3);
+        // $this->addReference('blog-3', $blog3);
+        // $this->addReference('blog-4', $blog4);
+        // $this->addReference('blog-5', $blog5);
+
 
     }
 

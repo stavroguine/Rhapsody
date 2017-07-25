@@ -298,4 +298,26 @@ class Articles
     {
         return $this->comments;
     }
+
+    /**
+    * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
+    */
+    private $category;
+
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+    * @var bool
+    *
+    * @ORM\Column(name="draft", type="boolean")
+    */
+    private $draft = false;
 }
