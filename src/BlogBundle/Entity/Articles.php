@@ -59,7 +59,7 @@ class Articles
     protected $blog;
 
     /**
-    * @ORM\Column(type="string", length=20)
+    * @ORM\Column(type="string", length=255)
     */
     protected $image;
 
