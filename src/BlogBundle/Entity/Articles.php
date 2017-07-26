@@ -24,10 +24,10 @@ class Articles
         $this->setUpdated(new \DateTime());
     }
 
-    public function __toString()
-    {
-        return $this->getTitle();
-    }
+    // public function __toString()
+    // {
+    //     return $this->getTitle();
+    // }
 
     /**
     * @ORM\PreUpdate
@@ -83,6 +83,13 @@ class Articles
     * @ORM\Column(type="datetime")
     */
     protected $updated;
+
+    /**
+    * @var bool
+    *
+    * @ORM\Column(name="draft", type="boolean")
+    */
+    private $draft = false;
 
     /**
     * Get id
@@ -300,7 +307,7 @@ class Articles
     }
 
     /**
-    * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
+    * @ORM\ManyToOne(targetEntity="Category", inversedBy="blog")
     */
     private $category;
 
@@ -314,10 +321,30 @@ class Articles
         return $this->category;
     }
 
+
+
     /**
-    * @var bool
+    * Set draft
     *
-    * @ORM\Column(name="draft", type="boolean")
+    * @param boolean $draft
+    *
+    * @return BlogPost
     */
-    private $draft = false;
+    public function setDraft($draft)
+    {
+        $this->draft = $draft;
+        return $this;
+    }
+    /**
+    * Get draft
+    *
+    * @return bool
+    */
+    public function getDraft()
+    {
+        return $this->draft;
+    }
+
+
+
 }
