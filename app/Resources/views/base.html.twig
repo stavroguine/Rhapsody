@@ -16,7 +16,8 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-
+{% set locale = path(app.request.get('_route'), {'_locale': app.request.attributes.get('_locale') }) %}
+{{ dump(locale) }}
         <section id="wrapper">
             <header id="header">
 

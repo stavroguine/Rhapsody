@@ -7,7 +7,7 @@ use FOS\UserBundle\Model\User as BaseUser;
 
 /**
  * Class User
- * @package FosSf3\MainBundle\Entity
+ * @package BlogBundle\Entity
  * @ORM\Table(name="fos_user")
  * @ORM\Entity
  */

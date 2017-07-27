@@ -1,17 +1,13 @@
-BlogBundle_homepage_fr:
-    path:     /{_locale}/
+BlogBundle_homepage:
+    path:     /
     defaults: { _controller: BlogBundle:Default:index }
     options:
         _locale: fr
 
 
-BlogBundle_homepage:
-    path:     /{_locale}/
-    defaults: { _controller: BlogBundle:Default:index }
-
 #section about
 BlogBundle_about:
-    path: /{_locale}/about
+    path: /about
     defaults: { _controller: BlogBundle:Content:about }
     requirements:
         _method:  GET
@@ -19,15 +15,15 @@ BlogBundle_about:
 
 #section contact
 BlogBundle_contact:
-    path: /{_locale}/contact
-    defaults: { _controller: BlogBundle:Content:contact }
+    path: /contact
+    defaults: { _controller: BlogBundle:Content:contact, _locale: fr }
     requirements:
         _method:  GET|POST
         _locale: en|fr
 
 #showing Articles
 BlogBundle_blog_show:
-    path:  /{_locale}/{id}
+    path:  /{id}
     defaults: { _controller: BlogBundle:Articles:show }
     requirements:
         _method:  GET
@@ -36,7 +32,7 @@ BlogBundle_blog_show:
 
 #create comment
 BlogBundle_comment_create:
-    path:  /{_locale}/comment/{blog_id}
+    path:  /comment/{blog_id}
     defaults: { _controller: BlogBundle:Comment:create }
     requirements:
         _method:  POST

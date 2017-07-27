@@ -23,7 +23,7 @@ framework:
     #serializer: { enable_annotations: true }
     templating:
         engines: ['twig']
-    default_locale: '%locale%'
+    default_locale: fr
     trusted_hosts: ~
     trusted_proxies: ~
     session:
@@ -82,7 +82,7 @@ swiftmailer:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Sf3App\MainBundle\Entity\User
+    user_class: BlogBundle\Entity\User
     service:
         mailer: fos_user.mailer.twig_swift
     registration:
@@ -101,7 +101,12 @@ fos_user:
         email:
             template: '@FOSUser/Resetting/email.txt.twig'
     group:
-        group_class: FosSf3\MainBundle\Entity\Group
+        group_class: BlogBundle\Entity\Group
     from_email:
         address: mail@domain.tld
         sender_name: user
+
+jms_i18n_routing:
+    default_locale: fr
+    locales: [fr, en]
+    strategy: prefix
