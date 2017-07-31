@@ -21,10 +21,16 @@ security:
                 check_path: fos_user_security_check
                 csrf_token_generator: security.csrf.token_manager
                 default_target_path: /
+            anonymous: true
+            remember_me:
+                secret: "%secret%"
+                lifetime: 3600
+                path: /
+            logout:
+                path: fos_user_security_logout
                 # if you are using Symfony < 2.8, use the following config instead:
                 # csrf_provider: form.csrf_provider
-            logout:       true
-            anonymous:    true
+
 
     encoders:
         FOS\UserBundle\Model\UserInterface: bcrypt
@@ -38,6 +44,7 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: fr/admin/, role: ROLE_ADMIN }
+        - { path: ^/logout$, role: IS_AUTHENTICATED_FULLY }
 
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
