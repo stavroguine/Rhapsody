@@ -3,6 +3,7 @@
 
 {% block body %}
 {% for blog in blogs %}
+{% if blog.draft == false  %}
 <article class="blog">
     <div class="date"><time datetime="{{ blog.created|date('c') }}">{{ blog.created|date('l, F j, Y') }}</time></div>
     <header>
@@ -23,5 +24,6 @@
 </article>
 {% else %}
 <p>Rien à voir</p>
+{% endif %}
 {% endfor %}
 {% endblock %}

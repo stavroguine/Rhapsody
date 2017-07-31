@@ -20,7 +20,7 @@ class CommentController extends Controller
         $comment->setBlog($blog);
         $form = $this->createForm(CommentType::class,  $comment);
 
-        return $this->render('BlogBundle:articles:form-new.html.twig', array(
+        return $this->render('BlogBundle:Posts:form-new.html.twig', array(
             'comment' => $comment,
             'form'   => $form->createView()
         ));
@@ -50,7 +50,7 @@ class CommentController extends Controller
             );
         }
 
-        return $this->render('BlogBundle:articles:form-create.html.twig', array(
+        return $this->render('BlogBundle:Posts:form-create.html.twig', array(
             'comment' => $comment,
             'form'    => $form->createView()
         ));
@@ -61,7 +61,7 @@ class CommentController extends Controller
         $em = $this->getDoctrine()
         ->getEntityManager();
 
-        $blog = $em->getRepository('BlogBundle:Articles')->find($blog_id);
+        $blog = $em->getRepository('BlogBundle:Posts')->find($blog_id);
 
         if (!$blog) {
             throw $this->createNotFoundException('Unable to find Blog post.');

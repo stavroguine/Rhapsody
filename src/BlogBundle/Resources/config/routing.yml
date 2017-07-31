@@ -21,10 +21,10 @@ BlogBundle_contact:
         _method:  GET|POST
         _locale: en|fr
 
-#showing Articles
+#showing Posts
 BlogBundle_blog_show:
     path:  /{id}
-    defaults: { _controller: BlogBundle:Articles:show }
+    defaults: { _controller: BlogBundle:Posts:show }
     requirements:
         _method:  GET
         id: \d+

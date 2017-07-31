@@ -6,7 +6,7 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use BlogBundle\Entity\Articles;
+use BlogBundle\Entity\Posts;
 use BlogBundle\Entity\Comment;
 
 class CommentFixtures extends AbstractFixture implements OrderedFixtureInterface

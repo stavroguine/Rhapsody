@@ -64,7 +64,7 @@ class Category
     }
 
     /**
-    * @ORM\OneToMany(targetEntity="Articles", mappedBy="category")
+    * @ORM\OneToMany(targetEntity="Posts", mappedBy="category")
     */
     private $blog;
 

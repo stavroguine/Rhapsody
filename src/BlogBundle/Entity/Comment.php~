@@ -34,7 +34,7 @@ class Comment
     protected $approved;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Articles", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="Posts", inversedBy="comments")
      * @ORM\JoinColumn(name="blog_id", referencedColumnName="id")
      */
     protected $blog;

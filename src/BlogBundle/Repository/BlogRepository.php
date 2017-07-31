@@ -24,6 +24,16 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
         ->getResult();
     }
 
+    public function getDraft()
+    {
+        $qb = $this->createQueryBuilder('b')
+        ->select('b.draft')
+        ->getQuery()
+        ->getResult();
+
+        return $qb;
+    }
+
 
     public function getTags()
     {

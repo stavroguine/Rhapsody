@@ -11,7 +11,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 */
 
 
-class Articles
+class Posts
 {
     public function __construct()
     {
@@ -106,7 +106,7 @@ class Articles
     *
     * @param string $title
     *
-    * @return Articles
+    * @return Posts
     */
     public function setTitle($title)
     {
@@ -130,7 +130,7 @@ class Articles
     *
     * @param string $author
     *
-    * @return Articles
+    * @return Posts
     */
     public function setAuthor($author)
     {
@@ -154,7 +154,7 @@ class Articles
     *
     * @param string $blog
     *
-    * @return Articles
+    * @return Posts
     */
     public function setBlog($blog)
     {
@@ -181,7 +181,7 @@ class Articles
     *
     * @param string $image
     *
-    * @return Articles
+    * @return Posts
     */
     public function setImage($image)
     {
@@ -205,7 +205,7 @@ class Articles
     *
     * @param string $tags
     *
-    * @return Articles
+    * @return Posts
     */
     public function setTags($tags)
     {
@@ -229,7 +229,7 @@ class Articles
     *
     * @param \DateTime $created
     *
-    * @return Articles
+    * @return Posts
     */
     public function setCreated($created)
     {
@@ -253,7 +253,7 @@ class Articles
     *
     * @param \DateTime $updated
     *
-    * @return Articles
+    * @return Posts
     */
     public function setUpdated($updated)
     {
@@ -277,7 +277,7 @@ class Articles
     *
     * @param \BlogBundle\Entity\Comment $comment
     *
-    * @return Articles
+    * @return Posts
     */
     public function addComment(\BlogBundle\Entity\Comment $comment)
     {

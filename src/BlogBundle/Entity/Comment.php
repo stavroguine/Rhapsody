@@ -37,7 +37,7 @@ class Comment
     protected $approved;
 
     /**
-    * @ORM\ManyToOne(targetEntity="Articles", inversedBy="comments")
+    * @ORM\ManyToOne(targetEntity="Posts", inversedBy="comments")
     * @ORM\JoinColumn(name="blog_id", referencedColumnName="id")
     */
     protected $blog;
@@ -201,11 +201,11 @@ class Comment
     /**
     * Set blog
     *
-    * @param \BlogBundle\Entity\Articles $blog
+    * @param \BlogBundle\Entity\Posts $blog
     *
     * @return Comment
     */
-    public function setBlog(\BlogBundle\Entity\Articles $blog = null)
+    public function setBlog(\BlogBundle\Entity\Posts $blog = null)
     {
         $this->blog = $blog;
 
@@ -215,7 +215,7 @@ class Comment
     /**
     * Get blog
     *
-    * @return \BlogBundle\Entity\Articles
+    * @return \BlogBundle\Entity\Posts
     */
     public function getBlog()
     {

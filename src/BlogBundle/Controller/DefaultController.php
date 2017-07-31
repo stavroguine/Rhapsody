@@ -17,7 +17,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()
            ->getEntityManager();
 
-           $blogs = $em->getRepository('BlogBundle:Articles')
+           $blogs = $em->getRepository('BlogBundle:Posts')
                     ->getLatestBlogs();
 
         return $this->render('BlogBundle::index.html.twig', array(

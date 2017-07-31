@@ -44,10 +44,10 @@ class ContentController extends Controller
         $em = $this->getDoctrine()
         ->getEntityManager();
 
-        $tags = $em->getRepository('BlogBundle:Articles')
+        $tags = $em->getRepository('BlogBundle:Posts')
         ->getTags();
 
-        $tagWeights = $em->getRepository('BlogBundle:Articles')
+        $tagWeights = $em->getRepository('BlogBundle:Posts')
         ->getTagWeights($tags);
 
         return $this->render('BlogBundle:content:sidebar.html.twig', array(
