@@ -18,7 +18,7 @@ class PostsController extends Controller
         $blog = $em->getRepository('BlogBundle:Posts')->find($id);
 
         if (!$blog) {
-            throw $this->createNotFoundException('Unable to find Blog post.');
+            throw new NotFoundHttpException("Unable to find Blog post.");
         }
 
         $comments = $em->getRepository('BlogBundle:Comment')
@@ -28,7 +28,7 @@ class PostsController extends Controller
         //print_r($draft);exit;
 
         if ($draft == 1) {
-            throw new NotFoundHttpException("Page not found");
+            throw new NotFoundHttpException("Unable to find Blog post.");
         }
         else {
             return $this->render('BlogBundle:posts:show.html.twig', array(

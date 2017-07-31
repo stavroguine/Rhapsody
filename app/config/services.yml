@@ -19,3 +19,9 @@ services:
         arguments: [~, BlogBundle\Entity\Posts, ~]
         tags:
             - { name: sonata.admin, manager_type: orm, label: Posts }
+
+    admin.blog_comment:
+        class: BlogBundle\Admin\CommentAdmin
+        arguments: [~, BlogBundle\Entity\Comment, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Comment }
