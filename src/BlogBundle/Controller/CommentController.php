@@ -20,7 +20,7 @@ class CommentController extends Controller
         $comment->setBlog($blog);
         $form = $this->createForm(CommentType::class,  $comment);
 
-        return $this->render('BlogBundle:Posts:form-new.html.twig', array(
+        return $this->render('BlogBundle:posts:form-new.html.twig', array(
             'comment' => $comment,
             'form'   => $form->createView()
         ));
@@ -50,7 +50,7 @@ class CommentController extends Controller
             );
         }
 
-        return $this->render('BlogBundle:Posts:form-create.html.twig', array(
+        return $this->render('BlogBundle:posts:form-create.html.twig', array(
             'comment' => $comment,
             'form'    => $form->createView()
         ));

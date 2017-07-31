@@ -31,7 +31,7 @@ class PostsController extends Controller
             throw new NotFoundHttpException("Page not found");
         }
         else {
-            return $this->render('BlogBundle:Posts:show.html.twig', array(
+            return $this->render('BlogBundle:posts:show.html.twig', array(
                 'blog'      => $blog,
                 'comments'  => $comments
             ));
