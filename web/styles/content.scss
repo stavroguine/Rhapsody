@@ -1,0 +1,50 @@
+.blogger-notice {
+  text-align: center;
+  padding: 10px;
+  background: #DFF2BF;
+  border: 1px solid;
+  color: #4F8A10;
+  margin-bottom: 10px;
+}
+
+form.blogger {
+  font-size: 16px;
+  div {
+    clear: left;
+    margin-bottom: 10px;
+  }
+  label {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+    font-weight: bold;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+  input {
+    &[type="text"], &[type="email"] {
+      width: 250px;
+      line-height: 26px;
+      font-size: 20px;
+      min-height: 26px;
+    }
+  }
+  textarea {
+    width: 250px;
+    height: 150px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+  input[type="submit"] {
+    margin-left: 110px;
+    width: 258px;
+    line-height: 26px;
+    font-size: 20px;
+    min-height: 26px;
+  }
+  ul li {
+    color: #ff0000;
+    margin-bottom: 5px;
+  }
+}

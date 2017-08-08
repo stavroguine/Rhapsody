@@ -16,7 +16,7 @@ browserSync.init({
 proxy : "127.0.0.1:8000" ,
 });
 gulp.watch( "../styles/*.scss" , [ 'sass' ]);
-gulp.watch( "../BlogBundle/src/Resources/views/**/*.twig" ).on( 'change' ,
+gulp.watch( "../../src/BlogBundle/Resources/views/**/*.twig" ).on( 'change' ,
 browserSync.reload);
 gulp.watch( "../scripts/*.js" ).on( 'change' ,
 browserSync.reload);
