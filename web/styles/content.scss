@@ -4,6 +4,7 @@
   background: #DFF2BF;
   border: 1px solid;
   color: #4F8A10;
+  font-family: 'Saira Condensed';
   margin-bottom: 10px;
 }
 
@@ -47,4 +48,80 @@ form.blogger {
     color: #ff0000;
     margin-bottom: 5px;
   }
+}
+
+//form
+
+
+/* Input Styles */
+
+.blogger {
+  width: 100%;
+  padding: 15px;
+  background: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 25px;
+  color: #727272 !important;
+  font-family: 'Saira Condensed';
+  font-size: 13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  -moz-box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  -webkit-box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  &:hover {
+    border: 1px solid #7478E8;
+  }
+  &:focus {
+    color: white;
+    outline: none;
+    border: 1px solid #7478E8;
+  }
+}
+
+#enquiry_body {
+  height: 100px;
+  max-width: 100%;
+}
+
+
+
+/* Send Button Styles */
+
+input[type=submit] {
+  width: 180px;
+  display: block;
+  height: auto;
+  padding: 15px;
+  color: #fff;
+  background: #7478E8;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: auto;
+  box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  -moz-box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  -webkit-box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+  &:hover {
+    background: #3E419B;
+    color: white;
+    border: none;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+center {
+  margin-top: 330px;
+}
+
+input {
+  position: relative;
+  z-index: 9999;
 }

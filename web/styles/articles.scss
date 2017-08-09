@@ -1,68 +1,74 @@
 .date {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  font-size: 24px;
-  color: #666;
-  line-height: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #666;
+    line-height: 30px;
 }
 
 .blog {
+    background-color: #FFFBFF;
     border-radius: 0 0 1em 1em;
-    box-shadow: 0 3px 0 0 rgba(51,51,51,0.1);
-margin-bottom: 3.5em;
-  img {
-    width: 190px;
-    float: left;
-    padding: 5px;
-    border: 1px solid #ccc;
-    margin: 0 10px 10px 0;
-  }
-  .meta {
-    clear: left;
-    margin-bottom: 20px;
-  }
-  .snippet p.continue {
-    margin-bottom: 0;
-    text-align: right;
-  }
-  .meta {
-    font-style: italic;
-    font-size: 12px;
-    color: #666;
-    p {
-      margin-bottom: 3.5em;
-      line-height: 1.2em;
-    }
-  }
-  img.large {
-    width: 300px;
-    min-height: 165px;
-  }
+    box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+    margin-bottom: 3.5em;
 
-  .highlight {
-      margin-bottom: -1.5em;
-  }
+
+    img {
+        width: 190px;
+        float: left;
+        padding: 5px;
+        border: 1px solid #ccc;
+        margin: 0 10px 10px 0;
+    }
+    .meta {
+        clear: left;
+        margin-bottom: 20px;
+    }
+    .snippet p.continue {
+        margin-bottom: 0;
+        margin-right: 2.5em;
+        text-align: right;
+    }
+    .meta {
+        font-style: italic;
+        font-size: 12px;
+        color: #666;
+        p {
+
+            line-height: 1.2em;
+        }
+    }
+    img.large {
+        width: 300px;
+        min-height: 165px;
+    }
+
+    .highlight {
+        margin-bottom: -1.5em;
+    }
+
+
+
 }
 
 .comments {
-  clear: both;
-  .odd {
-    background: #eee;
-  }
-  .comment {
-    padding: 20px;
-    p {
-      margin-bottom: 0;
-    }
-  }
-  h3 {
-    background: #eee;
-    padding: 10px;
-    font-size: 20px;
-    margin-bottom: 20px;
     clear: both;
-  }
-  .previous-comments {
-    margin-bottom: 20px;
-  }
+    .odd {
+        background: #eee;
+    }
+    .comment {
+        padding: 20px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    h3 {
+        background: #eee;
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        clear: both;
+    }
+    .previous-comments {
+        margin-bottom: 20px;
+    }
 }
