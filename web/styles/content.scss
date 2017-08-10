@@ -8,7 +8,7 @@
   margin-bottom: 10px;
 }
 
-form.blogger {
+form {
   font-size: 16px;
   div {
     clear: left;
@@ -124,4 +124,70 @@ center {
 input {
   position: relative;
   z-index: 9999;
+}
+
+//login
+
+.form_surcharge {
+    background-color: #FFFBFF;
+    border-radius: 0 0 1em 1em;
+    box-shadow: 3px 3px 1px 1px rgba(51,51,51,0.1);
+font-family: 'Saira Condensed';
+height: 75%;
+width: 100%;
+h2 {
+    text-align: center;
+    color: #7478E8;
+    font-family: 'La belle Aurore';
+}
+    form {
+        color: #7478E8;
+        font-family: 'Saira Condensed';
+        text-align: center;
+        label {
+            display: block;
+            float: none;
+           text-align: center;
+            //     vertical-align: inherit;
+            width: 100%;
+        }
+
+        label[for=username] {
+
+        }
+
+        label[for=password] {
+
+        }
+
+        label[for=remember_me] {
+            display: none;
+        }
+
+        input {
+
+        }
+
+        #username {
+
+        }
+
+        #password {
+
+        }
+
+        #remember_me {
+            display: none;
+        }
+
+        input[type=submit] {
+            margin-top: 1em;
+            margin-left: auto;
+
+
+
+        }
+
+
+    }
 }

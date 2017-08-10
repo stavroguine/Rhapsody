@@ -1,0 +1,19 @@
+
+
+
+
+
+{% block stylesheets %}
+<link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('styles/content.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('styles/articles.css') }}" type="text/css" rel="stylesheet" />
+<link href="{{ asset('styles/sidebar.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+<div class="form_surcharge">
+    <h2>Rejoindre Rhapsody</h2>
+{% block content %}
+
+    {% block fos_user_content %}{% endblock %}
+{% endblock %}
+</div>
