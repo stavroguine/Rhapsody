@@ -1,3 +1,9 @@
 parameters:
     # contact email address
     rhapsody.emails.contact_email: kaysel@protonmail.com
+
+
+# Override default dashboard template
+sonata_admin:
+    templates:
+        dashboard: dashboard.html.twig

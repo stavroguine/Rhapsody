@@ -42,6 +42,7 @@ sonata_block:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts: [admin]
+
 # Twig Configuration
 twig:
     debug: '%kernel.debug%'
